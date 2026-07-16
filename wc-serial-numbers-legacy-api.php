@@ -110,7 +110,7 @@ function process_request() {
 	}
 
 	// Check if key exists.
-	$serial_key = Key::get(
+	$serial_key = Key::find(
 		array(
 			'serial_key' => $key,
 			'product_id' => $product_id,
