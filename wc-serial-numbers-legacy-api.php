@@ -350,7 +350,7 @@ function deactivate_key( $serial_key ) {
 	}
 
 	// Check if instance is already activated.
-	$activation = Activation::get(
+	$activation = Activation::find(
 		array(
 			'serial_id' => $serial_key->get_id(),
 			'instance'  => $instance,
